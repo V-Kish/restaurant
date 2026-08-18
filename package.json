@@ -11,6 +11,7 @@
     "turbo": "^2.10.10"
   },
   "scripts": {
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint"
   }
 }
