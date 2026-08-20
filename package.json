@@ -8,7 +8,7 @@
     "pnpm": ">=11 <12"
   },
   "devDependencies": {
-    "turbo": "^2.10.10"
+    "turbo": "^2.10.11"
   },
   "scripts": {
     "typecheck": "turbo run typecheck",
