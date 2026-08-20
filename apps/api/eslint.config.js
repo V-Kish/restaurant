@@ -1,0 +1,25 @@
+import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import tseslint from 'typescript-eslint';
+
+export default defineConfig(
+  {
+    files: ['src/**/*.ts'],
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
+    ],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  eslintPluginPrettierRecommended,
+  {
+    ignores: ['dist/*'],
+  },
+);
