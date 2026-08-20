@@ -1,11 +1,22 @@
 {
   "$schema": "https://turborepo.dev/schema.json",
+  "ui": "tui",
   "tasks": {
     "typecheck": {
       "outputs": []
     },
     "lint": {
       "outputs": []
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:ios": {
+      "cache": false,
+      "persistent": true,
+      "interactive": true,
+      "with": ["api#dev"]
     }
   }
 }

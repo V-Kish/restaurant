@@ -1,3 +1,10 @@
+# POS + KDS + API
+
+```bash
+pnpm dev:ios
+```
+
+
 # POS
 
 ```bash

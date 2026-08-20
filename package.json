@@ -12,6 +12,7 @@
   },
   "scripts": {
     "typecheck": "turbo run typecheck",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "dev:ios": "turbo run dev:ios --filter=pos --filter=kds"
   }
 }
